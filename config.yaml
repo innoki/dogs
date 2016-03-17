@@ -1,0 +1,16 @@
+languageCode: en-us
+baseurl: http://innoki.de
+title: ""
+
+publishdir: public
+
+permalinks:
+  destination: /dest/:slug
+
+params:
+  FacebookURL: https://www.facebook.com/TeamInnoki
+  TwitterURL: https://twitter.com/teaminnoki?lang=de
+  GitHubURL: https://github.com/innoki
+  ImprintURL: http://innoki.de/?page_id=305
+
+  CatsBaseURL: https://example.com/cats

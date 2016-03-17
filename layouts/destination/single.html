@@ -1,0 +1,12 @@
+{{ $header := (print "header" "." "html") }}
+{{ partial $header . }}
+
+<header id="header">
+  <h1>{{ .Title | markdownify }}</h1>
+  <p>{{ .Content }}</p>
+</header>
+
+{{ $cats := (print "cats-" .Params.cats.style ".html") }}
+{{ partial $cats . }}
+
+{{ partial "footer.html" . }}
