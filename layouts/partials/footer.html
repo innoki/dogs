@@ -13,7 +13,13 @@
 
   <!--[if lte IE 8]><script src="{{ .Site.BaseURL }}/html5up/{{ .Params.style }}/assets/js/ie/respond.min.js"></script><![endif]-->
   <script src="{{ .Site.BaseURL }}/html5up/{{ .Params.style }}/assets/js/main.js"></script>
-  <script>init("{{ .Site.BaseURL }}/html5up/{{ .Params.style }}");</script>
-
+  <!--<script>init("{{ .Site.BaseURL }}/html5up/{{ .Params.style }}");</script>-->
+  <script>
+    var images = {}
+    images[{{ .Site.BaseURL }} + '/images/coffee-small.jpg'] = 'center';
+    images[{{ .Site.BaseURL }} + '/images/pens-small.jpg'] = 'center';
+    images[{{ .Site.BaseURL }} + '/images/whiteboard-small.jpg'] = 'center';
+    init(images);
+  </script>
 </body>
 </html>
