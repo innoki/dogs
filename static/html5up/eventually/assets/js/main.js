@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function() {
+function init(baseUrl) {
 
 	"use strict";
 
@@ -35,14 +35,14 @@
 		(function() {
 
 			// Settings.
+			  var images = {}
+				images[baseUrl + '/images/bg01.jpg'] = 'center';
+				images[baseUrl + '/images/bg02.jpg'] = 'center';
+				images[baseUrl + '/images/bg03.jpg'] = 'center';
 				var settings = {
 
 					// Images (in the format of 'url': 'alignment').
-						images: {
-							'/images/bg01.jpg': 'center',
-							'/images/bg02.jpg': 'center',
-							'/images/bg03.jpg': 'center'
-						},
+						images: images,
 
 					// Delay.
 						delay: 6000
@@ -171,4 +171,4 @@
 
 		})();
 
-})();
+};

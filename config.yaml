@@ -1,11 +1,14 @@
 languageCode: en-us
-baseurl: http://innoki.de
+baseurl: http://innoki.github.io/dogs
 title: ""
 
 publishdir: public
 
 permalinks:
   destination: /dest/:slug
+
+disableRSS: true
+disableSitemap: true
 
 params:
   FacebookURL: https://www.facebook.com/TeamInnoki

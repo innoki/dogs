@@ -11,8 +11,9 @@
     </ul>
   </footer>
 
-  <!--[if lte IE 8]><script src="/html5up/{{ .Params.style }}/assets/js/ie/respond.min.js"></script><![endif]-->
-  <script src="/html5up/{{ .Params.style }}/assets/js/main.js"></script>
+  <!--[if lte IE 8]><script src="{{ .Site.BaseURL }}/html5up/{{ .Params.style }}/assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="{{ .Site.BaseURL }}/html5up/{{ .Params.style }}/assets/js/main.js"></script>
+  <script>init("{{ .Site.BaseURL }}/html5up/{{ .Params.style }}");</script>
 
 </body>
 </html>
