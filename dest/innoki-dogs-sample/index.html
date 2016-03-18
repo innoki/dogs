@@ -49,8 +49,14 @@ The styling was taken (with permission) from <a href="http://html5up.net/">HTML5
 
   
   <script src="http://innoki.github.io/dogs/html5up/eventually/assets/js/main.js"></script>
-  <script>init("http:\/\/innoki.github.io\/dogs/html5up/eventually");</script>
-
+  
+  <script>
+    var images = {}
+    images["http://innoki.github.io/dogs" + '/images/coffee-small.jpg'] = 'center';
+    images["http://innoki.github.io/dogs" + '/images/pens-small.jpg'] = 'center';
+    images["http://innoki.github.io/dogs" + '/images/whiteboard-small.jpg'] = 'center';
+    init(images);
+  </script>
 </body>
 </html>
 
